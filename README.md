@@ -5,15 +5,15 @@ A simple npm package for greeting users.
 ## Installation
 
 ```shell
-$ pnpm install my-npm-package
+$ pnpm install dev-pkg-greet
 ```
 
 ## Usage
 
 ```js
-import { greet } from "dev-pkg-greet";
+import { greet } from 'dev-pkg-greet';
 
-const result = greet("World");
+const result = greet('World');
 
 // Output: Hello, World!
 console.log(result);
