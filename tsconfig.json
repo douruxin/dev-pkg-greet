@@ -1,10 +1,17 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#/*": ["src/*"]
+    },
     "target": "esnext",
     "module": "esnext",
     "strict": true,
+    "declaration": true,
     "moduleResolution": "node",
-    "outDir": "./dist"
+    "outDir": "dist",
+    "types": ["jest"]
   },
-  "types": ["jest"],
+  "include": ["src"],
+  "exclude": ["dist", "node_modules", "**/*.test.ts"]
 }

@@ -1,12 +1,13 @@
 {
   "name": "dev-pkg-greet",
-  "version": "0.0.3",
-  "type": "module",
+  "version": "0.0.4",
   "description": "A simple npm package for greeting users.",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest"
-  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "pnpm",
     "package"
@@ -22,5 +23,9 @@
     "ts-jest": "29.1.2",
     "ts-node": "10.9.2",
     "typescript": "5.4.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
   }
 }

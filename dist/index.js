@@ -1,8 +1,4 @@
-/**
- * Greet function.
- * @param name - The name to greet.
- * @returns The greeting message.
- */
+/** Greet function. */
 export const greet = (name) => {
     return `Hello, ${name}!`;
 };
